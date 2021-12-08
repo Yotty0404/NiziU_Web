@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     width: 600px;
     /*    background-color: rgba(255, 255, 255, 0.80);*/
-    height:calc(100vh - 220px);
+    height: calc(100vh - 220px);
 }
 
 #wrapper {
@@ -41,31 +41,52 @@ body {
     align-items: center;
 }
 
+
+#space {
+    flex: 1;
+}
+
+
 #btn_explanation {
+    margin-right: 10px;
     border-radius: 50px;
-    cursor: pointer;
     height: 40px;
     width: 40px;
     font-size: 20px;
+    background: linear-gradient(to right, #FF8FA2, #F969A5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
 }
 
-#space{
-    flex:1;
-}
+
+    #btn_explanation:before {
+        font-family: "Material Icons";
+        content: "question_mark";
+        font-size: 22px;
+        vertical-align: bottom;
+    }
+
+    #btn_explanation:hover {
+        /*        margin-top: 1px;*/
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+    }
 
 #form_upload {
-    align-self: flex-end;
     z-index: 100;
+    margin: 0;
     /*    padding: 6px 12px 6px 10px;*/
-    height: 10px;
-    margin: 0px 0px 50px 0px;
-    width: 200px;
+    /*    height: 10px;*/
+    /*    margin: 0px 0px 50px 0px;*/
+    /*    width: 200px;*/
 }
 
 #btn_upload {
     border-radius: 50px;
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-    margin-top: 4px;
+    /*    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);*/
+    /*    margin-top: 4px;*/
     padding: 10px 12px 10px 10px;
     background: linear-gradient(to right, #FF8FA2, #F969A5);
     color: white;
@@ -83,12 +104,13 @@ body {
     }
 
     #btn_upload:hover {
-        margin-top: 1px;
+        /*        margin-top: 1px;*/
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
     }
 
 #tbl_ranking {
-    height:85%;
+    height: 85%;
     width: 100%;
     margin-top: 6px;
     border-spacing: 6px;
@@ -103,8 +125,8 @@ body {
 
 .td_name {
     width: 50%;
-/*    height: 120px;*/
-    position:relative;
+    /*    height: 120px;*/
+    position: relative;
 }
 
 .div_name {
@@ -115,7 +137,7 @@ body {
 
 .img_rank {
     position: absolute;
-    width:56px;
+    width: 56px;
     top: 0px;
     left: 8px;
 }
@@ -151,7 +173,6 @@ body {
 }
 
     #footer_icons a:hover {
-        /*        margin-top: -5px;*/
         transform: translateY(-3px);
     }
 
@@ -224,8 +245,9 @@ body {
 
 @media (max-width: 700px) {
     #head {
-        font-size:26px;
+        font-size: 26px;
     }
+
     #body1 {
         width: 90%;
         height: calc(100vh - 250px);
@@ -248,13 +270,13 @@ body {
 
 @media (max-height:510px) {
     #body {
-        height:310px;
+        height: 310px;
     }
 
     #footer {
         width: 100%;
         position: relative; /*Å©ê‚ëŒà íu*/
-        margin-top:30px;
+        margin-top: 30px;
         /*bottom: 20px;*/ /*â∫Ç…å≈íË*/
         text-align: center;
         z-index: 1;
