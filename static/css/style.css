@@ -6,8 +6,7 @@ body {
 
 #head {
     width: 100%;
-    height: 50px;
-    padding: 5px 0px 5px 0px;
+    padding: 8px 0px 8px 0px;
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
     background-image: linear-gradient(to right, #FCA5E2, #F9C2E9);
@@ -83,6 +82,7 @@ body {
 .td_name {
     width: 50%;
     height: 120px;
+    position:relative;
 }
 
 .div_name {
@@ -93,8 +93,9 @@ body {
 
 .img_rank {
     position: absolute;
-    top: -30px;
-    left: 2px;
+    width:56px;
+    top: 0px;
+    left: 8px;
 }
 
 .lbl {
@@ -106,11 +107,6 @@ body {
     text-align: center;
     font-size: 30px;
 }
-
-/*footer {
-    position: absolute;*/ /*Å©ê‚ëŒà íu*/
-/*bottom: 0;*/ /*â∫Ç…å≈íË*/
-/*}*/
 
 #footer {
     width: 100%;
@@ -162,11 +158,24 @@ body {
 
 
 @media (max-width: 700px) {
+    #head {
+        font-size:26px;
+    }
     #body1 {
         width: 90%;
     }
 
     .shape1 {
         width: 180px;
+    }
+
+    .img_rank {
+        width: 48px;
+        top: 0px;
+        left: 2px;
+    }
+
+    #footer {
+        bottom: 8px; /*â∫Ç…å≈íË*/
     }
 }
