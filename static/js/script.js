@@ -29,11 +29,9 @@ $(function () {
     $('#upload').change(function () {
         $('#mdl_loading').fadeIn();
 
-
-        sleep(0.5, function () {
+        sleep(0.1, function () {
             $("#btn_submit").click();
         });
-
     });
 
     $('#btn_explanation').click(function () {
