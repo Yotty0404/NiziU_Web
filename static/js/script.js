@@ -35,10 +35,10 @@ $(function () {
     });
 
     $('#btn_explanation').click(function () {
-        $('#signup_modal').fadeIn();
+        $('#mdl_explanation').fadeIn();
     });
 
     $('.close_icon').click(function () {
-        $('#signup_modal').fadeOut();
+        $('#mdl_explanation').fadeOut();
     });
 });
