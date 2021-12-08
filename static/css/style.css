@@ -245,9 +245,18 @@ body {
         bottom: 8px; /*â∫Ç…å≈íË*/
     }
 }
-/*
-@media (max-height:500px) {
+
+@media (max-height:510px) {
     #body {
-        height:30vh;
+        height:310px;
     }
-}*/
+
+    #footer {
+        width: 100%;
+        position: relative; /*Å©ê‚ëŒà íu*/
+        margin-top:30px;
+        /*bottom: 20px;*/ /*â∫Ç…å≈íË*/
+        text-align: center;
+        z-index: 1;
+    }
+}
