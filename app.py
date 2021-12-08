@@ -6,13 +6,6 @@ import os
 #Flaskオブジェクトの生成
 app = Flask(__name__)
 
-ALLOWED_EXTENSIONS = set(['png', 'jpg'])
-
-def allwed_file(filename):
-    # .があるかどうかのチェックと、拡張子の確認
-    # OKなら１、だめなら0
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
 @app.route('/', methods=['POST', 'GET'])
 def upload_file():
     data = [[],[],[]]
@@ -27,7 +20,7 @@ def upload_file():
         if file.filename == '':
             print('ファイルがありません2')
         # ファイルのチェック
-        if file and allwed_file(file.filename):
+        if file:
             # 危険な文字を削除（サニタイズ処理）
             filename = secure_filename(file.filename)
             print('OK')
