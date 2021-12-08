@@ -30,38 +30,42 @@
                     <td class="td_name">
                         <img class="img_rank" src="/static/img/crown1-96.png" />
                         <div class="div_name">
-                            name
+                            {{data[0][0]}}
                         </div>
                     </td>
                     <td>
                         <div class="lbl">そっくり度...</div>
-                        <div class="per">72.4%</div>
+                        <div class="per">
+                            {{data[0][1]}}
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="td_name">
                         <img class="img_rank" src="/static/img/crown2-96.png" />
                         <div class="div_name">
-                            name
+                            {{data[1][0]}}
                         </div>
                     </td>
                     <td>
                         <div class="lbl">そっくり度...</div>
-                        <div class="per">32.6%</div>
-                    </td>
-                </tr>
+                        <div class="per">
+                            {{data[1][1]}}
+                        </div>
+</tr>
                 <tr>
                     <td class="td_name">
                         <img class="img_rank" src="/static/img/crown3-96.png" />
                         <div class="div_name">
-                            name
+                            {{data[2][0]}}
                         </div>
                     </td>
                     <td>
                         <div class="lbl">そっくり度...</div>
-                        <div class="per">12.4%</div>
-                    </td>
-                </tr>
+                        <div class="per">
+                            {{data[2][1]}}
+                        </div>
+</tr>
             </table>
         </div>
     </div>
@@ -69,7 +73,8 @@
     <!--モーダル-->
     <div class="modal_wrap" id="signup_modal">
         <div class="modal_inner">
-            <div class="close_icon">×
+            <div class="close_icon">
+                ×
             </div>
             <div class="signup_form">
                 <h2>[説明]</h2>

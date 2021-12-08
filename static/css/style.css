@@ -124,6 +124,7 @@ body {
     }
 
 .td_name {
+    height:76px;
     width: 50%;
     /*    height: 120px;*/
     position: relative;
