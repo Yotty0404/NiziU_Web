@@ -5,7 +5,7 @@ $(function () {
     });
 
     $('#upload').change(function () {
-        $('#signup_modal').fadeIn();
+        $('#signup_modal').fadeIn(500);
         $("#btn_submit").click();
     });
 
