@@ -58,15 +58,11 @@ body {
     border: none;
     cursor: pointer;
     transition: all .2s;
+    font-family: "Material Icons";
+    content: "question_mark";
+    font-size: 22px;
+    vertical-align: bottom;
 }
-
-
-    #btn_explanation:before {
-        font-family: "Material Icons";
-        content: "question_mark";
-        font-size: 22px;
-        vertical-align: bottom;
-    }
 
     #btn_explanation:hover {
         /*        margin-top: 1px;*/
