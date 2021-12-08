@@ -192,7 +192,7 @@ body {
     width: 30%;
     height: 150px;
     transform: skewX(16deg);
-    background: linear-gradient(to left, #3B58CB, #8597DF);
+    background: linear-gradient(to right, #3B58CB, #AFBDF5);
     z-index: 10;
 }
 
@@ -237,8 +237,43 @@ body {
         right: 0;
     }
 
+/* ローディング画面 */
+.modal_inner2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+}
 
+#loading {
+    top: 100%;
+    left: 100%;
+    transition: all 1s;
+    background: #00000000;
+}
 
+.spinner {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: #FCA5E2;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
 
 @media (max-width: 700px) {
     #head {
