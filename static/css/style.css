@@ -37,11 +37,16 @@ body {
 #wrapper {
     flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #btn_explanation {
     border-radius: 50px;
     cursor: pointer;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
 }
 
 #space{
