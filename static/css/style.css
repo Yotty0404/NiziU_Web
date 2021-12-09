@@ -6,7 +6,6 @@
     -webkit-appearance: none;
     -webkit-text-size-adjust: 100%;
     font-family: 'Readex Pro', 'Noto Sans JP', sans-serif;
-    ;
 }
 
 body {
@@ -167,7 +166,7 @@ body {
     height: 66px;
     width: 50%;
     /*    height: 120px;*/
-    position: relative;
+/*    position: relative;*/
 }
 
 .div_name {
@@ -233,7 +232,7 @@ body {
 
 .shape1 {
     position: absolute;
-    top: 74px;
+    top: 55px;
     right: -10%;
     width: 30%;
     height: 150px;
@@ -323,7 +322,7 @@ body {
 
 @media (max-width: 700px) {
     #head {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     #body1 {
