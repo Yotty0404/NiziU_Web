@@ -61,17 +61,14 @@ body {
     margin-right: 10px;
     border-radius: 50px;
     padding: 10px 12px 10px 10px;
-    /*    height: 48px;
-    width: 48px;*/
     font-size: 18px;
-    /*    background: linear-gradient(to right, #FF8FA2, #F969A5);*/
     background: linear-gradient(to right, #FF8FA2, #F969A5);
     color: white;
     border: none;
     cursor: pointer;
     transition: all .2s;
-    /*    font-family: "Material Icons";*/
     vertical-align: bottom;
+    letter-spacing: 1px;
 }
 
 
@@ -79,8 +76,8 @@ body {
         font-family: "Material Icons";
         content: "info";
         font-size: 22px;
-        /*        vertical-align: bottom;*/
-/*        padding: 0;*/
+        vertical-align: bottom;
+        margin-right:2px;
     }
 
     #btn_info:hover {
@@ -92,10 +89,6 @@ body {
 #form_upload {
     z-index: 100;
     margin: 0;
-    /*    padding: 6px 12px 6px 10px;*/
-    /*    height: 10px;*/
-    /*    margin: 0px 0px 50px 0px;*/
-    /*    width: 200px;*/
 }
 
 #btn_upload {
