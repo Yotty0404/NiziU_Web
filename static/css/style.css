@@ -158,7 +158,7 @@ body {
 }
 
 .td_name {
-    height: 76px;
+    height: 56px;
     width: 50%;
     /*    height: 120px;*/
     position: relative;
@@ -315,7 +315,7 @@ body {
 
 @media (max-width: 700px) {
     #head {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     #body1 {
@@ -340,7 +340,7 @@ body {
 
 @media (max-height:510px) {
     #body {
-        height: 310px;
+        height: 280px;
     }
 
     #footer {

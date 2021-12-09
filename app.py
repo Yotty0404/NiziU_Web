@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, flash, render_template
+from flask import Flask, request, redirect, url_for, flash, render_template, send_from_directory
 from werkzeug.utils import secure_filename
 from datetime import timedelta
 import os
@@ -33,4 +33,8 @@ def upload_file():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu.png')
 
