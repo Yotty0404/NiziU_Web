@@ -38,8 +38,7 @@ if __name__ == "__main__":
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu.png')
 
-@app.route("/manifest.json")
-def manifest():
-    return send_from_directory('./templates', 'manifest.json')
 
-
+@app.route('/apple-touch-icon.png')
+def apple_icon():
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu.png')
