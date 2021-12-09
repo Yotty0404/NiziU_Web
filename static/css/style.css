@@ -17,7 +17,7 @@ body {
     width: 100%;
     padding: 8px 0px 8px 0px;
     color: #FFF;
-/*        text-shadow: 1px 1px 1px #333;*/
+    /*        text-shadow: 1px 1px 1px #333;*/
     background-image: linear-gradient(to right, #FCA5E2, #F9C2E9);
     text-align: center;
     font-size: 30px;
@@ -36,7 +36,7 @@ body {
 
 #body1 {
     margin: 5px auto 5px auto;
-    padding: 5px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -49,6 +49,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40px;
+    max-height: 40px;
 }
 
 
@@ -60,7 +62,7 @@ body {
 #btn_info {
     margin-right: 10px;
     border-radius: 50px;
-    padding: 10px 12px 10px 10px;
+    padding: 6px 12px 6px 10px;
     font-size: 18px;
     background: linear-gradient(to right, #FF8FA2, #F969A5);
     color: white;
@@ -77,7 +79,7 @@ body {
         content: "info";
         font-size: 22px;
         vertical-align: bottom;
-        margin-right:2px;
+        margin-right: 2px;
     }
 
     #btn_info:hover {
@@ -95,7 +97,7 @@ body {
     border-radius: 50px;
     /*    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);*/
     /*    margin-top: 4px;*/
-    padding: 10px 12px 10px 10px;
+    padding: 6px 12px 6px 10px;
     background: linear-gradient(to right, #FF8FA2, #F969A5);
     font-size: 16px;
     color: white;
@@ -129,9 +131,13 @@ body {
 
     #tbl_ranking td {
         /*   border: 2px solid black; */
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(255, 255, 255, 0.90);
         border-radius: 5px;
     }
+
+.tr {
+    position: relative;
+}
 
 #tr1 {
     animation: fadeIn 0.5s ease 0s 1 normal backwards;
@@ -158,7 +164,7 @@ body {
 }
 
 .td_name {
-    height: 56px;
+    height: 66px;
     width: 50%;
     /*    height: 120px;*/
     position: relative;
@@ -180,6 +186,8 @@ body {
 .lbl {
     font-size: 14px;
     margin-left: 8px;
+    position: absolute;
+    top: 6px;
 }
 
 .per {
@@ -320,7 +328,7 @@ body {
 
     #body1 {
         width: 90%;
-        height: calc(100vh - 250px);
+        /*        height: calc(100vh - 250px);*/
     }
 
     .shape1 {
@@ -332,23 +340,22 @@ body {
         top: 0px;
         left: 2px;
     }
+}
 
-    #footer {
-        bottom: 8px; /*â∫Ç…å≈íË*/
+@media (max-height:540px) {
+    .per {
+        transform: translateY(8px);
     }
 }
 
-@media (max-height:510px) {
+@media (max-height:480px) {
     #body {
         height: 280px;
     }
 
     #footer {
-        width: 100%;
-        position: relative; /*Å©ê‚ëŒà íu*/
+        position: relative;
         margin-top: 30px;
-        /*bottom: 20px;*/ /*â∫Ç…å≈íË*/
-        text-align: center;
-        z-index: 1;
+        bottom: 8px;
     }
 }
