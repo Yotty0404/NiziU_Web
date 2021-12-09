@@ -44,4 +44,4 @@ def favicon():
 @app.route('/favicon.png')
 @app.route('/icon.png')
 def icon():
-    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu_text.png')
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'pearl_Icon.jpg')
