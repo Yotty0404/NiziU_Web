@@ -31,6 +31,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 2;
+    min-height:240px
 }
 
 #body1 {
@@ -40,7 +41,8 @@ body {
     flex-direction: column;
     width: 600px;
     /*    background-color: rgba(255, 255, 255, 0.80);*/
-    height: calc(100vh - 220px);
+    /*    height: calc(100vh - 220px);*/
+    height: calc(70vh - 50px);
 }
 
 #wrapper {
@@ -120,7 +122,7 @@ body {
     }
 
 #tbl_ranking {
-    height: 85%;
+    height: 100%;
     width: 100%;
     margin-top: 6px;
     border-spacing: 6px;
@@ -163,10 +165,13 @@ body {
 }
 
 .td_name {
-    height: 66px;
     width: 50%;
-    /*    height: 120px;*/
-/*    position: relative;*/
+    /*    min-height: 50px;
+    max-height: 50px;
+    height: calc(20vh - 40px);*/
+    /*    height: calc(20vh - 40px);*/
+    position: relative;
+    height:54px;
 }
 
 .div_name {
@@ -348,10 +353,6 @@ body {
 }
 
 @media (max-height:480px) {
-    #body {
-        height: 280px;
-    }
-
     #footer {
         position: relative;
         margin-top: 30px;
