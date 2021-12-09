@@ -38,4 +38,4 @@ if __name__ == "__main__":
 @app.route('/apple-touch-icon.png')
 @app.route('/apple-touch-icon-precomposed.png')
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu.png')
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'pearl_Icon.jpg')
