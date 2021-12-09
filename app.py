@@ -39,6 +39,8 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'niziu.png')
 
 
+@app.route('/apple-touch-icon-120x120-precomposed.png')
+@app.route('/apple-touch-icon-120x120.png')
 @app.route('/apple-touch-icon-precomposed.png')
 @app.route('/apple-touch-icon.png')
 @app.route('/favicon.png')
