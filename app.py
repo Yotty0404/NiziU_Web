@@ -34,12 +34,16 @@ def upload_file():
 if __name__ == "__main__":
     app.run(debug=True)
 
+
+@app.route('/favicon.ico')
+@app.route('/favicon.png')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'logo.png')
+
 @app.route('/apple-touch-icon-120x120-precomposed.png')
 @app.route('/apple-touch-icon-120x120.png')
 @app.route('/apple-touch-icon-precomposed.png')
 @app.route('/apple-touch-icon.png')
-@app.route('/favicon.ico')
-@app.route('/favicon.png')
 @app.route('/icon.png')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'logo.png')
+def icon():
+    return send_from_directory(os.path.join(app.root_path, 'static/img/'), 'logo_white.png')
