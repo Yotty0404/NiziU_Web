@@ -52,24 +52,33 @@ body {
 }
 
 
-#btn_explanation {
+#btn_info {
     margin-right: 10px;
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
+    padding: 10px 12px 10px 10px;
+    /*    height: 48px;
+    width: 48px;*/
+    font-size: 18px;
+    /*    background: linear-gradient(to right, #FF8FA2, #F969A5);*/
     background: linear-gradient(to right, #FF8FA2, #F969A5);
     color: white;
     border: none;
     cursor: pointer;
     transition: all .2s;
-    font-family: "Material Icons";
-    content: "question_mark";
-    font-size: 22px;
+    /*    font-family: "Material Icons";*/
     vertical-align: bottom;
 }
 
-    #btn_explanation:hover {
+
+    #btn_info:before {
+        font-family: "Material Icons";
+        content: "info";
+        font-size: 22px;
+        /*        vertical-align: bottom;*/
+/*        padding: 0;*/
+    }
+
+    #btn_info:hover {
         /*        margin-top: 1px;*/
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
         transform: translateY(-3px);
@@ -90,6 +99,7 @@ body {
     /*    margin-top: 4px;*/
     padding: 10px 12px 10px 10px;
     background: linear-gradient(to right, #FF8FA2, #F969A5);
+    font-size: 18px;
     color: white;
     border: none;
     cursor: pointer;
@@ -150,7 +160,7 @@ body {
 }
 
 .td_name {
-    height:76px;
+    height: 76px;
     width: 50%;
     /*    height: 120px;*/
     position: relative;

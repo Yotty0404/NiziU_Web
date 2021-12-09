@@ -34,11 +34,11 @@ $(function () {
         });
     });
 
-    $('#btn_explanation').click(function () {
-        $('#mdl_explanation').fadeIn();
+    $('#btn_info').click(function () {
+        $('#mdl_info').fadeIn();
     });
 
     $('.close_icon').click(function () {
-        $('#mdl_explanation').fadeOut();
+        $('#mdl_info').fadeOut();
     });
 });
