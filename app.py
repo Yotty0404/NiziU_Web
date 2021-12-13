@@ -2,6 +2,10 @@ from flask import Flask, request, redirect, url_for, flash, render_template, sen
 from werkzeug.utils import secure_filename
 from datetime import timedelta
 import os
+import numpy as np
+
+from predict import detect_face
+
 
 #Flaskオブジェクトの生成
 app = Flask(__name__)
@@ -23,10 +27,20 @@ def upload_file():
         # ファイルのチェック
         if file:
             # 危険な文字を削除（サニタイズ処理）
-            filename = secure_filename(file.filename)
+            #filename = secure_filename(file.filename)
             print('OK')
+
+            #print(app.root_path)
+            #print(request.files['face_image'])
+            
+            stream = request.files['face_image'].stream
+            img_array = np.asarray(bytearray(stream.read()), dtype=np.uint8)
+            data = detect_face(app.root_path, img_array)
+
+            if data == False:
+                return
+
             lbl = 'そっくり度...'
-            data = [['tesuto','72.3%'],['test2','52.1%'],['test3','35.5%']]
         return render_template('index.html', lbl=lbl, data=data)
     else:
         return render_template('index.html', lbl=lbl, data=data)
