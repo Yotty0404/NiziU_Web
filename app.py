@@ -28,6 +28,7 @@ def upload_file():
         if file:
             # 危険な文字を削除（サニタイズ処理）
             #filename = secure_filename(file.filename)
+
             print('OK')
 
             #print(app.root_path)
