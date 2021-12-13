@@ -5,6 +5,7 @@ icrawler==0.6.6
 inflection==0.5.1
 keras==2.7.0
 Keras-Preprocessing==1.1.2
+libgl1-mesa-dev
 opencv-contrib-python==4.5.4.60
 opencv-python-headless==4.5.4.60
 opt-einsum==3.3.0
