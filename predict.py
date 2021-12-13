@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 import os
 import sys
-from keras.models import  load_model
+from keras.models import load_model
 
 def detect_face(root_path, image):
     model = load_model(os.path.join(root_path, 'static/models/','my_model.h5'))
