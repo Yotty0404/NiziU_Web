@@ -256,7 +256,7 @@ body {
     width: 40%;
     height: 200px;
     transform: skewX(16deg);
-    background: linear-gradient(to right, #3B58CB, #AFBDF5);
+    background: linear-gradient(to right, #3B58CB, #6A7FD2);
     z-index: 10;
 }
 
@@ -265,7 +265,7 @@ body {
     top: 42px;
     right: 2%;
     width: 50px;
-    background: rgba(175, 187, 236, 0.55);
+    background: rgba(128, 181, 233, 0.61);
     z-index: 11;
     animation-name: shape2;
     animation-duration: 12s;
