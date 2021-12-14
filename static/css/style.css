@@ -392,7 +392,11 @@ body {
         top: 0px;
         left: 2px;
     }
-}
+
+    .modal_inner {
+        width: 80%;
+        font-size: 13px;
+    }
 
 @media (max-height:540px) {
     .per {
