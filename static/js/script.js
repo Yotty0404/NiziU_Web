@@ -40,5 +40,6 @@ $(function () {
 
     $('.close_icon').click(function () {
         $('#mdl_info').fadeOut();
+        $('#mdl_failure').fadeOut();
     });
 });

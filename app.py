@@ -19,11 +19,13 @@ def upload_file():
         # ファイルがなかった場合の処理
         if 'face_image' not in request.files:
             print('ファイルがありません1')
+            return render_template('index.html', lbl=lbl, data=data, isImageLoadFailure=True)
         # データの取り出し
         file = request.files['face_image']
         # ファイル名がなかった時の処理
         if file.filename == '':
             print('ファイルがありません2')
+            return render_template('index.html', lbl=lbl, data=data, isImageLoadFailure=True)
         # ファイルのチェック
         if file:
             # 危険な文字を削除（サニタイズ処理）
@@ -39,12 +41,12 @@ def upload_file():
             data = detect_face(app.root_path, img_array)
 
             if data == False:
-                return
+                return render_template('index.html', lbl=lbl, data=[[],[],[]], isImageLoadFailure=True)
 
             lbl = 'そっくり度...'
-        return render_template('index.html', lbl=lbl, data=data)
+        return render_template('index.html', lbl=lbl, data=data, isImageLoadFailure=False)
     else:
-        return render_template('index.html', lbl=lbl, data=data)
+        return render_template('index.html', lbl=lbl, data=data, isImageLoadFailure=False)
 
 if __name__ == "__main__":
     app.run(debug=True)

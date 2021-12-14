@@ -19,7 +19,7 @@ body {
     /*        text-shadow: 1px 1px 1px #333;*/
     background-image: linear-gradient(to right, #FCA5E2, #F9C2E9);
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Readex Pro', sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 2;
-    min-height:240px
+    min-height: 240px
 }
 
 #body1 {
@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index:10;
+    z-index: 10;
 }
 
 #space {
@@ -178,7 +178,7 @@ body {
     height: calc(20vh - 40px);*/
     /*    height: calc(20vh - 40px);*/
     position: relative;
-    height:54px;
+    height: 54px;
 }
 
 .div_name {
@@ -270,7 +270,7 @@ body {
 
 .modal_inner {
     background: #cccccc;
-    width: 400px;
+    width: 405px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -284,15 +284,56 @@ body {
     -ms-transform: translateY(-50%) translateX(-50%);
 }
 
-.close_icon {
-    position: relative;
-    cursor: pointer;
+.close_wrapper {
+    /*    width: 100%;/*/
+    display: flex;
+    justify-content: center;
 }
 
-    .close_icon i {
-        position: absolute;
-        right: 0;
+.close_wrapper2 {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transition: all .2s;
+    background: radial-gradient(circle, #cccccc 50%, black 50%);
+}
+
+    .close_wrapper2:hover {
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
     }
+
+
+.close_icon {
+    top: -2px;
+    left: -2.6px;
+    position: relative;
+    cursor: pointer;
+    font-family: "Material Icons";
+    font-size: 36px;
+}
+
+
+.content form {
+    text-align: left;
+}
+
+.content2 {
+    margin-top: 16px;
+}
+
+.mytw {
+    display: inline-block;
+    width: 1.5em;
+    vertical-align: bottom;
+    fill: #55acee;
+    transition: all .2s;
+}
+
+    .mytw:hover {
+        transform: translateY(-3px) !important;
+    }
+
 
 /* ローディング画面 */
 .modal_inner2 {
@@ -334,7 +375,7 @@ body {
 
 @media (max-width: 700px) {
     #head {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     #body1 {
