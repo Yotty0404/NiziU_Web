@@ -32,7 +32,7 @@ body {
     overflow: hidden;
     z-index: 2;
     min-height: 240px;
-    height:calc(100vh - 260px);
+    height: calc(100vh - 260px);
 }
 
 #body1 {
@@ -67,6 +67,9 @@ body {
     flex: 1;
 }
 
+#iconfix {
+    z-index: 100;
+}
 
 #btn_info {
     margin-right: 10px;
@@ -248,10 +251,10 @@ body {
 
 .shape1 {
     position: absolute;
-    top: 55px;
+    top: 8px;
     right: -10%;
-    width: 30%;
-    height: 150px;
+    width: 40%;
+    height: 200px;
     transform: skewX(16deg);
     background: linear-gradient(to right, #3B58CB, #AFBDF5);
     z-index: 10;
@@ -262,12 +265,119 @@ body {
     top: 42px;
     right: 2%;
     width: 50px;
-    height: 234px;
-    background: red;
+    background: rgba(175, 187, 236, 0.55);
     z-index: 11;
+    animation-name: shape2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes shape2 {
+    0% {
+        top: 42px;
+        height: 0px;
+    }
+
+    3% {
+        top: 42px;
+        height: 235px;
+    }
+
+    5% {
+        top: 42px;
+        height: 235px;
+    }
+
+    13% {
+        top: 277px;
+        height: 0px;
+    }
+
+    100% {
+        top: 42px;
+        height: 0px;
+    }
+}
+
+.shape3 {
+    position: absolute;
+    height: 3px;
+    top: 50px;
+    background: rgb(128, 89, 212);
+    z-index: 11;
+    animation-name: shape3;
+    animation-duration: 9s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
 }
 
 
+@keyframes shape3 {
+    0% {
+        width: 0%;
+        right: 38%;
+    }
+
+    5% {
+        width: 60%;
+        right: 38%;
+    }
+
+    8% {
+        width: 60%;
+        right: 38%;
+    }
+
+    50% {
+        width: 0%;
+        right: 98%;
+    }
+
+    100% {
+        width: 0%;
+        right: 98%;
+    }
+}
+
+#svg {
+    position: absolute;
+    top: 120px;
+    left: calc(50% - 480px);
+    z-index: 100;
+    animation-name: svg;
+    animation-duration: 14s;
+    animation-timing-function: ease-out;
+    animation-delay: 2.9s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 1000;
+    stroke-width: 2px;
+}
+
+
+@keyframes svg {
+    0% {
+        stroke-dashoffset: 3000;
+    }
+
+    15% {
+        stroke-dashoffset: 2000;
+    }
+
+    50% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 1000;
+    }
+}
 
 
 /*ÉÇÅ[É_Éã*/
@@ -416,6 +526,11 @@ span {
         width: 80%;
         font-size: 14px;
     }
+
+    #svg {
+        left: -110px;
+        animation-name: svg;
+    }
 }
 
 @media (max-height:540px) {
@@ -423,12 +538,3 @@ span {
         transform: translateY(8px);
     }
 }
-/*
-@media (max-height:480px) {
-    #footer {
-        position: relative;
-        margin-top: 30px;
-        bottom: 8px;
-    }
-}
-*/
