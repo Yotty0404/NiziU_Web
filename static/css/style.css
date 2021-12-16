@@ -129,6 +129,7 @@ body {
     margin-top: 6px;
     border-spacing: 6px;
     z-index: 100;
+    font-weight:700;
 }
 
     #tbl_ranking td {
