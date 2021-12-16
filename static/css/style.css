@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@400;700&display=swap');
 
 * {
     -webkit-appearance: none;
     -webkit-text-size-adjust: 100%;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     background-image: linear-gradient(to right, #FCA5E2, #F9C2E9);
     text-align: center;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #body {
@@ -72,7 +72,7 @@ body {
     border-radius: 50px;
     padding: 6px 12px 6px 10px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     background: linear-gradient(to right, #FF8FA2, #F37BAD);
     color: white;
     border: none;
@@ -208,7 +208,7 @@ body {
 #footer_text {
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #footer_icons a {
