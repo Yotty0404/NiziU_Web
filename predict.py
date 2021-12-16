@@ -41,8 +41,6 @@ def detect_face(root_path, image):
                 dic[i] = predict[0][i]
 
             dic = sorted(dic.items(), reverse=True, key=lambda x : x[1])
-            print(dic[0][0], dic[0][1])
-            print()
 
             data = []
             for i in range(3):

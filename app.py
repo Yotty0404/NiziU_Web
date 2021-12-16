@@ -28,14 +28,8 @@ def upload_file():
             return render_template('index.html', lbl=lbl, data=data, isImageLoadFailure=True)
         # ファイルのチェック
         if file:
-            # 危険な文字を削除（サニタイズ処理）
-            #filename = secure_filename(file.filename)
-
             print('OK')
 
-            #print(app.root_path)
-            #print(request.files['face_image'])
-            
             stream = request.files['face_image'].stream
             img_array = np.asarray(bytearray(stream.read()), dtype=np.uint8)
             data = detect_face(app.root_path, img_array)
