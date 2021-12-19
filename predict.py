@@ -6,7 +6,7 @@ import sys
 from keras.models import load_model
 
 def detect_face(root_path, image):
-    model = load_model(os.path.join(root_path, 'static/models/','my_model.h5'))
+    model = load_model(os.path.join(root_path, 'static/models/','my_model'))
     image = cv2.imdecode(image, 1)
     if image is None:
         print("Not open:")

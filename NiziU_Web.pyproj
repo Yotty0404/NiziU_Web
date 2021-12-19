@@ -31,6 +31,9 @@
     <Folder Include="static\css\" />
     <Folder Include="static\js\" />
     <Folder Include="static\models\" />
+    <Folder Include="static\models\my_model\" />
+    <Folder Include="static\models\my_model\assets\" />
+    <Folder Include="static\models\my_model\variables\" />
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +41,10 @@
     <Content Include="static\models\haarcascade_frontalface_alt.xml" />
     <Content Include="static\js\script.js" />
     <Content Include="static\models\my_model.h5" />
+    <Content Include="static\models\my_model\keras_metadata.pb" />
+    <Content Include="static\models\my_model\saved_model.pb" />
+    <Content Include="static\models\my_model\variables\variables.data-00000-of-00001" />
+    <Content Include="static\models\my_model\variables\variables.index" />
     <Content Include="templates\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
